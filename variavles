@@ -1,0 +1,35 @@
+variables:
+--1)static typed and dynamic type:
+1)variables
+2)variables are used to store the data(any kind of data)
+
+variables:
+1>case-sensitive
+2>start with letters,(under_score),$(dollarsign)
+3>can't start with numbers
+4>Reserved works(keyword)not allowed
+5>Allowed letters,_(under_score),$(dollarsign),numbers
+
+
+How to declare variables:
+> var
+> let
+> const
+
+1)var keyword 1995-2015
+2)let keyword 2015
+3)var used only old browsers
+-----------------------------
+Example:1                    
+     var a=1;                
+       a=5;                 
+       document.write(a+a)  
+       console.log(a+a)      
+o/p:10                       
+
+--redeclaring with var is not accepted
+--redeclaring with (let,const) is not accepted
+
+Block scope:
+variables declared with var does not have 
+let allows the block scope
