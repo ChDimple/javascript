@@ -1,0 +1,29 @@
+Data types
+
+javascript is Dynamic type languages
+Types of data types
+ primitive 
+ non-primitive: Objects & Arrays
+ primitive data types
+ 1)predefined: we can store single values
+ types of primitive 
+ 1)numbers: integers, float
+ 2)string: stream of characters enclosed in quotes(single quotes, double quotes,backtick quotes)
+ 3)Boolean: true/false
+ 4)null: empty value
+ 5)undefined: declared variable with no value
+
+String Concatnation:
+a=sai
+b=kumar
+age=30
+let c=
+o/p:Iam sai Kumar ,my age is 30 yrs old
+
+condition st:To make the set instructions execute only when the condition is true
+Block of code(conditional block):set of instructions 
+-->when this block of code will execute;it will execute when the specific condition is true.
+indentation:{
+	       -->block of code
+	    }
+
