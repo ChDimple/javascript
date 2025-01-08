@@ -1,0 +1,91 @@
+JavaScipt Operators:
+1)Arithmetic Operators:+,-,*
+multiplication:*
+division:/(Q)
+Modulus Operator:%(R)
+Exponential(raised to the power):**,++,--
+
+Assignment operator:
+var student = "swetha"
++=
+-=
+/=
+%=
+
+Logical Operators:
+and -&&
+T and T = T
+or - ||
+T or F = F
+not !
+
+Relational Operators(comparision)
+<,>,>=,<=,==,===,!=,!===,==:equality
+
+conditional operator ;Ternary operator(?)
+first evalutes an expreesion for a true / false;
+condition ?
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //alert("srivinaya")
+        //document.write(alert)
+        //let aa=prompt("Enter your name")
+        //alert(`my name is :${aa}`)
+        let a1=prompt
+        document.write(a1,"<br>")
+        document.write(typeof(a1),"<br>")
+        let a2=prompt
+        document.write(a1+a2,"<br>")
+        
+        
+        //let t=40
+        //let r=(t>45)?'Ac-off':'AC-on'
+        //document.write(r,"<br>")
+        //let a="5"
+        //let b="5"
+        //document.write(a>=b,"<br>")
+        //document.write(a!=b,"<br>")
+        //document.write(a==b,"<br>")
+        //document.write(a!==b,"<br>")
+       //  document.write(a>b && a>2,"<br>")
+        //document.write(a>b && a>12,"<br>")
+        //document.write(a>b || a>2,"<br>")
+        //document.write(!(a>12),"<br>")
+        //a+=40 //a=a+40 a=5+40=45
+        //b-=5//b=b-5 //2
+        //a++
+        //b--
+        //document.write(b,"<br>")
+        //document.write(a,",<br>")
+        //document.write(a*b, "<br>")
+        //document.write(a**b,"<br>")
+        //document.write(a/b , "<br>")
+        //document.write(a%b)
+       //let age
+       //console.log(age)
+        //let a=null
+       //document.write(a , "<br>")
+       //document.write(typeof(a))
+       //let a=1
+       //console.log("hi +a")
+       //document.write('hi +a+a')
+       //document.write(`hi+${a+a}`)
+       //console.log(`hi+${a+a}`)
+       //let a="sai"
+       //let b="kumar"
+       //let age=30
+       //console.log(`I am ${a+" "+b},my age is ${age} is yrs old` )
+       //console.log(`ReactJS student = ${a+" "+b},`)  -->
+       //document.write(`ReactJS student = ${a+" "+b},`)
+    </script>
+</body>
+</html>
