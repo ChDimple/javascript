@@ -1,0 +1,54 @@
+1) Write a program ro check whether the number is divisible by 2 and 3 and both(take prompt)
+2) Write a program to find the largest number out of three numbers expected from the user
+3)Accept the following from the user and calculate the percentage of classes attended:
+  a)total number of working days 
+  b)total number of days for absent
+  After calculating percentage show that, if the percentage is less than 75,then student will not be eligible to write exam
+
+code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        3rd
+        let a=parseInt(prompt("no of working days"))
+        let b=parseInt(prompt("no of days absent"))
+        let c=parseInt(prompt("no of days attended"))
+        let d=(c/a)*100
+        if(d>75){
+            document.write("eligible for exam")
+        }else{
+            document.write("not eligible for exam")
+        }
+  
+        2nd
+        //let a=parseInt(prompt("enter a number"))
+        //let b=parseInt(prompt("enter a number"))
+        //let c=parseInt(prompt("enter a number"))
+        //if(a>b && a>c){
+            //document.write("a is largest number")
+        //}else if(b>a && b>c){
+            //document.write("b is largest number")
+        //}else {
+            //document.write("c is largest number")
+        //}
+
+        1st
+        //let num=parseInt(prompt("enter a number"))
+        //if(num%2==0 && num%3==0){
+            //document.write("num is divisible by 2 and 3")
+        //}else{
+            //document.write("not divisible by 2 and 3")
+        //}
+
+
+      
+    </script>
+</body>
+</html>
