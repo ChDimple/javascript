@@ -1,0 +1,50 @@
+//function greet(){
+           // console.log("hello")
+        //}
+        //greet()
+        //console.log("hi")
+        //greet()
+
+        //function g(name){
+            //console.log("hello "+name)
+        //}
+        //let name=prompt("enter your name")
+        //g(name)
+        //console.log(name)
+
+        //function add(a,b){
+            //console.log(`sum of ${a} + ${b} is:${a+b}`)
+        //}
+        //let inta=parseInt(prompt("enter a number"))
+        //let intb=parseInt(prompt("enter another number"))
+        //add(inta,intb)
+        
+    sum=function(n1,n2){
+let r=n1+n2
+return r
+}
+console.log(sum(8,9))
+
+FUNCTIONS:
+-->a function is reusable block of code
+--> it can be call any where in program
+-->Reusable code: using an existing code without writing it ever we needed
+-->we can use same code to perform differ arguments to get the results
+
+keyword = function
+()
+parameters=values which are declared inside the parenthesis()while defining the function
+
+arguments=values which are passed through the parameters
+
+ex: function with parameters
+
+anonymous function:
+a function without any name, after we create a function without name and we assign it to a variable
+ex:
+sum=function(n1,n2)
+let r=n1+n2
+return r
+}
+console.log(sum(8,9))
+
