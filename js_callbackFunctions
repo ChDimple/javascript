@@ -1,0 +1,91 @@
+callback functions:
+-->you can pass the callback function as an argument to another function
+
+execution: The function which is receiving the callback will execute the callback at some of point during execution(often at the end or after an asynchronous operation is done)
+
+e.g: function mainfunction(callback){
+console.log("executing main function");
+callback()
+//here we call the callback function
+}
+function callbackfunction(){
+console.log("callback function executed")
+}
+mainfunction(callbackfunction);
+
+exp:mainfunction takes a parameter callback
+callbackfunction is passed as an argument to mainfunction inside the mainfunction, the callback function
+
+Output:
+mainfunction(callbackfunction);
+it will execute the code inside the mainfunction-
+it will print("Executing main function");
+then it reaches to callback(); where 
+
+e.g:2
+passing a named function as a callback;
+
+function greet(name, callback){
+console.log("hello" +name);
+callback();
+//executes the callback function after greeting
+}
+function goodbye(){
+console.log("goodbye"!)
+}
+greet("pavani",goodbye);
+
+
+e.g:3
+//anonymous function as callback
+function greet(name, callback){
+console.log("hello" +name);
+callback();
+//executes the callback function after greeting
+}
+greet("pavani" ,function(){
+console.log("goodbye!")    
+}
+);
+
+e.g:4
+//asynchronous function as callback
+
+function fetchData(callback){
+console.log("Fetching data...")
+setTimeout(function(){
+console.log("Data fetched");
+callback();
+},2000);
+}
+function processData(){
+console.log("processing the fetched data...")
+}
+fetchData(processData);
+
+e.g:5
+//using callback with array methods(map)
+const numbers=[1,2,3,4,5]
+const d=numbers.map(function(num){
+return num*2
+})
+console.log(d)
+
+ex: map() is a built in array method that callback function to process each item in array
+The callback here double each number(num*2) and will result a new array with doubled values
+
+
+EX:
+function registeruser(username,email,callback){
+console.log("registering user"+username);
+setTimeout(function(){
+console.log("user"+username+"registered successfully");
+
+callback(email);
+},2000);
+}
+function sendWelcomeEmail(email){
+console.log("sending Welcome email to"+email);
+};
+registerUser("harshit","harshit123@gmail.com ,sendWelcomeEmail);
+
