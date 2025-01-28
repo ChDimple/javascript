@@ -1,0 +1,70 @@
+DOM (Document Object Model):
+ --DOM is basically the representation of the same html document but in a tree like
+   structure composed of object.
+ --Mainly used in web develeopment and used to interact and manipulate(change) 
+   the html document.
+--When the webpage loaded, the browser create DOM of the webpage
+--When html file is loaded into the browser the javascript cannot unsderstand html 
+  document directly
+
+  Keypoints:
+  1)Structure: -The DOM represents the structure of HTML.
+               -Each node in tree represents the elements, an attribute or text
+
+  2)Manipulation: -using javascript, you can interact with elements(buttons,paragraphs) 
+                   on the webpage, changing the content, styles can be added or remove elements
+
+  3)Event Handling: - you can handle the interactions, like click or pressing the buttons
+
+  4)W3C: world wide web Consortium
+
+ --Document is the entry point of DOM 
+
+
+
+ --Methods of Document Objects:
+   -used to interact with & to manipulate the document.
+   1) Getting Element:
+       a) Getting Element by id 
+       b) Getting Element by class
+       c) Getting Element by tag
+       d) Getting Element by query selector
+
+
+
+
+Eg: using class:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .br{
+        color: brown;
+    }
+
+    .b{
+        color: blue;
+    }
+
+    .r{
+        color: red;
+    }
+</style>
+<body>
+    <h1 class="br">Pavani</h1>
+    <h1 class="b">Kavya</h1>
+    <h1 class="r">Sneha</h1>
+    <h1 class="br">Sivani</h1>
+    <h1 class="r">Bhanu</h1>
+    <h1 class="b">Ramya</h1>
+
+    <!-- pavani & sivani brown
+         Sneha & Bhanu in red
+         Kavya & Ramya in blue-->
+
+</body>
+</html>
