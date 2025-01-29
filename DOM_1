@@ -1,0 +1,39 @@
+<h1 id="aa" class="a">i am sam</h1>
+    <h2 id="b" class="b">i am john</h1>
+    <h1 id="c" class="a">i am ravi</h1>
+
+    <h2 class="a">i am ria</h2>
+    <script>
+        let x=document.querySelector('h1')
+        console.log(x)
+    </script>
+
+<!-- <h1 id="a">hello</h1>
+    <h1 id="b">hi</h1>
+    <h1 id="c">bye</h1>
+    <script>
+        let x=document.getElementById('a');
+        console.log(x)
+    </script> -->
+
+    <!-- <h1 id="a">i am sam</h1>
+    <h1 id="b">i am john</h1>
+    <h1 id="c">i am ravi</h1>
+    <h2 class="d">i am ria</h2>
+    <script>
+        let x=document.getElementsByClassName('d');
+        console.log(x)
+    </script> -->
+
+    <!-- <h1 id="a">i am sam</h1>
+    <h1 id="b">i am john</h1>
+    <h1 id="c">i am ravi</h1>
+    <h2 class="d">i am ria</h2>
+    <script>
+        let x=document.getElementsByTagName(h1)
+        console.log(a)
+
+        for(let i=0;i<x.length;i++){
+            document.write(x[i].innerHTML);
+        }
+    </script> -->
