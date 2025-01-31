@@ -27,11 +27,11 @@ EX;
     </script>
 Removing a child element from a parent node:
         <h1> Removing child Node </h1>
-        <h2> I am swathi </h2>
+        <h2> I am dimple </h2>
         <ul>
-            <li> Swathi </li>
-            <li> Ammu </li>
-            <li> Cherry </li>
+            <li> dimple </li>
+            <li> vinaya </li>
+            <li> pavani </li>
         </ul>
         <script>
             const ul =document.querySelector('ul')
@@ -44,21 +44,21 @@ EX;
     
 O/P:
 Removing child Node
-I am swathi
+I am dimple
 Console o/p:
-Removing: Swathi
-Removing: Ammu
-Removing: Cherry
+Removing: dimple
+Removing: vinaya
+Removing: pavani
 To Append a new element:
 Append() – To append a new element ton parent node.
 <div id="a">
-            <h1>Swathi</h1>
+            <h1>dimple</h1>
             <h1>Pavani</h1>
         </div>
 
         <div id="b">
-            <h1>Ammu</h1>
-            <h1> Cherry</h1>
+            <h1>dimple</h1>
+            <h1> vinaya</h1>
         </div>
         <script>
             let n=document.createElement("h2")
@@ -72,11 +72,11 @@ Append() – To append a new element ton parent node.
             console.log(p.innerText)
         </script>
 o/p:
-Swathi
+dimple
 Pavani
-Ammu
-Cherry
+vinaya
+shivani
 Pavani is the Team leader
 Console o/p:
-Ammu
-Cherry
+pavani
+vinaya
