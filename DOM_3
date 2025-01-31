@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a"> 
+        <h1>ravi</h1>
+        <h1>ram</h1>
+    </div>
+    <div id="b">
+        <h1>sam</h1>
+        <h1>venkat</h1>
+    </div>
+    <script>
+        //let n=document.createElement("h2")
+        //n.textContent="Rahul"
+        
+        //let p=document.getElementById('a')
+        //let l=document.getElementById('r')
+        
+        //p.insertBefore(n,l)
+        //console.log(p)
+
+        //let m=document.createElement("h2")
+        //m.textContent="Dimple"
+        
+        //let x=document.getElementById('a')
+        //let y=document.getElementById('rr')
+        
+        //x.insertBefore(m,y)
+        //console.log(p)
+
+
+        //TO remove an child element
+        //let n=document.getElementById("a")
+        //let l=document.getElementById("re")
+        //console.log(l)
+        //n.removeChild(l)
+
+        //to remove an element
+        //let b=document.getElementById("b")
+        //b.remove()
+
+        //replace
+        let n=document.getElementById("h1")
+        n.innerText="versionIT"
+        p.replaceChildren(n);
+        console.log(p)
+        
+    </script>
+</body>
+</html>
