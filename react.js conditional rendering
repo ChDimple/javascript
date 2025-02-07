@@ -1,0 +1,46 @@
+[07-02-2025 09:48] Dimple: import React from "react";
+
+function Greeting({isLoggedIn}){
+    if(isLoggedIn){
+        return <h1> Welcome Back!</h1>
+    }else{
+        return <h1>Please Login</h1>
+    }
+}
+export default Greeting;
+
+
+[07-02-2025 09:50] Dimple: import React from "react";
+
+import Greeting from "./Greeting";
+
+function App(){
+  const isLoggedIn =true;
+
+  return(
+    <div className="App">
+      <Greeting isLoggedIn={isLoggedIn}/>
+
+    </div>
+  )
+}
+export default App;
+
+
+
+[07-02-2025 10:22] Dimple: import React from "react";
+
+const FruitList=()=>{
+  const fruits=['apple','cherry','orange'];
+  return(
+    <div>
+      <h1>fruits List</h1>
+      <ul>
+        {fruits.map((fruit,index)=>(
+          <li key={index}>{fruit}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+export default FruitList
