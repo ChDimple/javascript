@@ -1,0 +1,50 @@
+React Hooks:
+-->introduced on react 16.8 version
+-->to manage style and life cycle features in functional components.
+State: is an essential part of react because it allows components to be dynamic, interactive and capable of responding to user input or change over time.
+
+1)useStateHook: 
+useState allows you to add state to functional components.
+
+syntax:
+const[state ,setState]=userState(initial value)
+state: This is current state 
+setState: This is a function to update to State 
+initial value: The value you want to set as the initial value
+
+[10-02-2025 10:09] Dimple: import React ,{useState} from 'react'
+
+//counter component
+const Counter=()=>{
+  const[count,SetCount]=useState(0);
+  //current state = count
+  //function to update state =setCount
+  //use state() to initialize the state =0;
+
+  return(
+    <div>
+      <h1>{count}</h1>
+      <button onClick={() =>setCount(count+1)}>Increment</button>
+      <button onClick={() =>setCount(count-1)}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+[10-02-2025 10:29] Dimple: import React ,{use, useState} from 'react'
+
+const ThemeToggler=()=>{
+  const[theme,setTheme]=useState('dark')
+
+  const toggleTheme=()=>{
+    setTheme(prevTheme=>(prevTheme=='light'?'dark':'light'))
+  }
+
+  return(
+    <div style={{backgroundColor:theme==='light'?'white':'black' ,color:theme==="light"?'black':'white',textAlign}}>
+      <h1>The current Theme is{theme}</h1>
+      <button onClick={toggleTheme}toggleTheme></button>
+    </div>
+  )
+};
+export default ThemeToggler;
