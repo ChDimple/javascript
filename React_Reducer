@@ -1,0 +1,62 @@
+React Reducer():
+A Reducer is a function that helps to update (like score ,a list)based on action we take
+1)current State: The current value of a state
+2)Action:
+Example:
+Action: add or remove an item
+State: initial value (3items) #3-apples
+Tracking apples:
+
+import React, { useReducer } from 'react';
+
+function appleReducer(state = 4, action) {
+  switch (action.type) {
+    case 'ADD_APPLE':
+      return state + 1;
+    case 'REMOVE_APPLE':
+      return state - 1;
+    default:
+      return state;
+  }
+}0
+
+function App() {
+  const [state, dispatch] = useReducer(appleReducer, 3);
+
+  return (
+    <div style={{ padding: '20px', textAlign: 'center' }}>
+      <h1 style={{ color: 'Red' }}>APPLE Counter</h1>
+      <p style={{color: 'blue' }}> Number of APPLES: {state}</p>
+      <button
+        onClick={() => dispatch({ type: 'ADD_APPLE' })}
+        style={{
+          backgroundColor: 'blue',
+          color: 'white',
+          padding: '10px 20px',
+          margin: '10px',
+          border: 'none',
+          borderRadius: '20px',
+          cursor: 'pointer',
+        }}
+      >
+        ADD APPLE
+      </button>
+      <button
+        onClick={() => dispatch({ type: 'REMOVE_APPLE' })}
+        style={{
+          backgroundColor: 'black',
+          color: 'white',
+          padding: '10px 20px',
+          margin: '10px',
+          border: 'none',
+          borderRadius: '20px',
+          cursor: 'pointer',
+        }}
+      >
+        REMOVE APPLE
+      </button>
+    </div>
+  );
+}
+
+export default App;
