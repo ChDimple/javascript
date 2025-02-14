@@ -18,7 +18,7 @@ function appleReducer(state = 4, action) {
     default:
       return state;
   }
-}0
+}
 
 function App() {
   const [state, dispatch] = useReducer(appleReducer, 3);
